@@ -27,7 +27,7 @@ import {AppRoutingModule} from '../app-routing.module';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {ReactiveFormsModule} from '@angular/forms';
 import {CoursesService} from './services/courses.service';
-import {courseResolver} from './services/course.resolver';
+import {CourseResolver} from './services/course.resolver';
 
 @NgModule({
     declarations: [
@@ -67,7 +67,8 @@ import {courseResolver} from './services/course.resolver';
         CourseDialogComponent
     ],
     providers: [
-        CoursesService
+        CoursesService,
+        CourseResolver
     ]
 })export class CoursesModule {
 
